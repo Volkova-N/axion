@@ -10,27 +10,31 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="block-left">
-        <div class="logo">
-          <img src="img/Axion_logo.svg">
-        </div>
+      <div class="logo"></div>
+      <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox">
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
         <nav class="menu">
-          <a class="menu__item" href="#">SHOP</a>
-          <a class="menu__item" href="#">NEWS</a>
-          <a class="menu__item" href="#">TEAM</a>
-          <a class="menu__item" href="#">LEGACY</a>
-          <a class="menu__item" href="#">HELP</a>
+          <div class="menu-left">
+            <a class="menu-left__item menu-left__item_shop" href="#">SHOP</a>
+            <a class="menu-left__item menu-left__item_news" href="#">NEWS</a>
+            <a class="menu-left__item menu-left__item_team" href="#">TEAM</a>
+            <a class="menu-left__item menu-left__item_legacy" href="#">LEGACY</a>
+            <a class="menu-left__item menu-left__item_help" href="#">HELP</a>
+          </div>
+          <div class="menu-right">
+            <form class="menu-right__item menu-right__item_search">
+              <input type="search" class="menu-right__item_search-1">
+              <img class="menu-right__item_lypa" src="img/lypa.png">
+            </form>
+            <a class="menu-right__item menu-right__item_sing" href="#">SIGN IN</a>
+            <a class="menu-right__item menu-right__item_cart" href="#">CART</a>
+            <img class="menu-right__item menu-right__item_img" src="img/Group 2.png">
+            <img class="menu-right__item menu-right__item_flag" src="img/flag.svg">
+          </div>
         </nav>
-      </div>
-      <div class="block-right">
-        <form class="block-right__item block-right__item_search">
-          <input type="search">
-          <img src="img/lypa.png">
-        </form>
-        <a class="block-right__item block-right__item_sing" href="#">SING IN</a>
-        <a class="block-right__item block-right__item_cart" href="#">CART</a>
-        <img class="block-right__item block-right__item_img" src="img/Group 2.png">
-        <img class="block-right__item block-right__item_flag" src="img/flag.svg">
       </div>
     </header>
     <section class="one">
@@ -42,68 +46,68 @@
         </div>
       </div>
     </section>
-    <section class="products">
+    <section class="product">
       <h2 class="product__title">FEATURED PRODUCT</h2>
-      <section class="blocks">
-        <section class="block">
-          <img class="kros" src="img/kros-1.svg">
-          <p class="name">Atlas Black/Rasta Axion</p>
-          <div class="ch">
-            <p class="price">$89.00</p>
-            <nav class="change">
-              <button class="change__item change__item_11"></button>
-              <button class="change__item change__item_12"></button>
-              <button class="change__item change__item_13"></button>
-              <button class="change__item change__item_14"></button>
+      <section class="product-assortment">
+        <section class="product-card">
+          <div class="product-card__img-1"></div>
+          <p class="product-card__name product-card__name_1">Atlas Black/Rasta Axion</p>
+          <div class="wrapper__choice wrapper__choice_1">
+            <p class="product-card__price">$89.00</p>
+            <nav class="choice">
+              <button class="choice__item choice__item_gray"></button>
+              <button class="choice__item choice__item_black"></button>
+              <button class="choice__item choice__item_red"></button>
+              <button class="choice__item choice__item_yellow"></button>
             </nav>
           </div>
         </section>
-        <div class="vl"></div>
-        <section class="block">
-          <img class="kros" src="img/kros-2.svg">
-          <p class="name">Camel/Chili Pepper Axion</p>
-          <div class="ch">
-            <p class="price">$74.00</p>
-            <nav class="change">
-              <button class="change__item change__item_21"></button>
-              <button class="change__item change__item_22"></button>
-              <button class="change__item change__item_23"></button>
-              <button class="change__item change__item_24"></button>
+        <div class="product-assortment__vl"></div>
+        <section class="product-card">
+          <div class="product-card__img-2"></div>
+          <p class="product-card__name product-card__name_2">Camel/Chili Pepper Axion</p>
+          <div class="wrapper__choice wrapper__choice_2">
+            <p class="product-card__price">$74.00</p>
+            <nav class="choice">
+              <button class="choice__item choice__item_gray"></button>
+              <button class="choice__item choice__item_orange"></button>
+              <button class="choice__item choice__item_red"></button>
+              <button class="choice__item choice__item_yellow"></button>
             </nav>
           </div>
         </section>
-        <div class="vl"></div>
-        <section class="block">
-          <img class="kros" src="img/kros-3.svg">
-          <p class="name">Mandel Smoke/Rust Axion </p>
-          <div class="ch">
-            <p class="price">$69.00</p>
-            <nav class="change">
-              <button class="change__item change__item_31"></button>
-              <button class="change__item change__item_32"></button>
-              <button class="change__item change__item_33"></button>
-              <button class="change__item change__item_34"></button>
+        <div class="c"></div>
+        <section class="product-card">
+          <div class="product-card__img-3"></div>
+          <p class="product-card__name product-card__name_3">Mandel Smoke/Rust Axion </p>
+          <div class="wrapper__choice wrapper__choice_3">
+            <p class="product-card__price">$69.00</p>
+            <nav class="choice">
+              <button class="choice__item choice__item_gray"></button>
+              <button class="choice__item choice__item_brown"></button>
+              <button class="choice__item choice__item_navy"></button>
+              <button class="choice__item choice__item_yellow"></button>
             </nav>
           </div>
         </section>
-        <div class="vl"></div>
-        <section class="block">
-          <img class="kros" src="img/kros-4.svg">
-          <p class="name">Cloud/Electric Blue Axion </p>
-          <div class="ch">
-            <p class="price">$69.00</p>
-            <nav class="change">
-              <button class="change__item change__item_41"></button>
-              <button class="change__item change__item_42"></button>
-              <button class="change__item change__item_43"></button>
-              <button class="change__item change__item_44"></button>
+        <div class="product-assortment__vl"></div>
+        <section class="product-card">
+          <div class="product-card__img-4"></div>
+          <p class="product-card__name product-card__name_4">Cloud/Electric Blue Axion </p>
+          <div class="wrapper__choice wrapper__choice_4">
+            <p class="product-card__price">$69.00</p>
+            <nav class="choice">
+              <button class="choice__item choice__item_gray"></button>
+              <button class="choice__item choice__item_blue"></button>
+              <button class="choice__item choice__item_red"></button>
+              <button class="choice__item choice__item_yellow"></button>
             </nav>
           </div>
         </section>
       </section>
     </section>
     <section class="tree">
-      <img class="video"  src="img/video.png">
+      <img class="tree__video"  src="img/video.png">
       <div class="tree-text">
         <h3 class="tree-text__title">LEGENDARY FOOTWEAR REBORN</h3>
         <p class="tree-text__subtitle">We are a brand with a history and are relaunching for 2019. We’ve been a part of the skater’s family ever since it’s early teenage years. And now we presentate a new footwear collection.</p>
@@ -118,10 +122,10 @@
     <h4 class="stories__title">Recent stories</h4>
     <div class="srories-wrapper">
       <section class="stories">
-        <img class="stories__img" src="img/history-1.png">
+        <div class="stories__img-1"></div>
         <p class="stories__subtitle">Presents Justin Anagoa</p>
         <p class="stories__text">Anagoa’s been a part of the skater’s family ever since his early teenage years. He’s been known to go big on and off the board, but it’s been rare we get a glimpse into how Anagoa lives his day-to-day, to see what makes Anagoa tick.</p>
-        <div class="ch">
+        <div class="wrapper__choice">
           <div class="button">
             <a class="stories__button" href="#">LEARN MORE</a>
             <div class="arrow arrow__1">
@@ -132,11 +136,11 @@
         </div>
       </section>
       <section class="stories">
-        <img class="stories__img" src="img/history-2.png">
+        <div class="stories__img-2"></div>
         <p class="stories__subtitle">First Frontside flip</p>
         <p class="stories__text">Yoon recently discusses his first time shooting a signature Andrew Reynolds frontside flip on The Berrics. Click the image below to see the full gallery and read up on what happened that day.
 Photo:Yoon Sul.</p>
-        <div class="ch">
+        <div class="wrapper__choice">
           <div class="button">
             <a class="stories__button" href="#">LEARN MORE</a>
             <div class="arrow arrow__1">
@@ -147,10 +151,10 @@ Photo:Yoon Sul.</p>
         </div>
       </section>
       <section class="stories">
-        <img class="stories__img" src="img/history-3.png">
+        <div class="stories__img-3"></div>
         <p class="stories__subtitle">Kevin Baekkel is Pro</p>
         <p class="stories__text">Creature proudly announced today that they’re officially adding Kevin Baekkel to their pro roster. After paying his dues for years, killing it on last years Thrasher King of the Road, and constantly lighting every spot he hits on fire.</p>
-        <div class="ch">
+        <div class="wrapper__choice">
           <div class="button">
             <a class="stories__button" href="#">LEARN MORE</a>
             <div class="arrow arrow__1">
@@ -174,50 +178,50 @@ Photo:Yoon Sul.</p>
   </div>
 </body>
 <footer>
-  <div class="footer__wrapper">
-    <section class="footer-1">
-      <p class="footer__title">MY ACCOUNT</p>
-      <ul class="footer__menu">
-        <li><a class="footer__item" href="#">Login</a></li>
-        <li><a class="footer__item" href="#">Wish List</a></li>
-        <li><a class="footer__item" href="#">Order History</a></li>
-        <li><a class="footer__item" href="#">Track order</a></li>
-        <li><a class="footer__item" href="#">Gift cards</a></li>
+  <div class="footer-wrapper">
+    <div class="footer-account">
+      <p class="footer-account__title">MY ACCOUNT</p>
+      <ul class="menu-account">
+        <li><a class="menu-account__item menu-account__item_login" href="#">Login</a></li>
+        <li><a class="menu-account__item menu-account__item_wishlist" href="#">Wish List</a></li>
+        <li><a class="menu-account__item menu-account__item_history" href="#">Order History</a></li>
+        <li><a class="menu-account__item menu-account__item_track" href="#">Track order</a></li>
+        <li><a class="menu-account__item menu-account__item_gift" href="#">Gift cards</a></li>
       </ul>
-    </section>
-    <section class="footer-2">
-      <p class="footer__title">CUSTOMER SERVICE</p>
-      <ul class="footer__menu">
-        <li><a class="footer__item" href="#">Contact us</a></li>
-        <li><a class="footer__item" href="#">Help/FAQ</a></li>
-        <li><a class="footer__item" href="#">Shipping</a></li>
-        <li><a class="footer__item" href="#">Returns</a></li>
-        <li><a class="footer__item" href="#">Size guide</a></li>
-        <li><a class="footer__item" href="#">Holiday shopping</a></li>
+    </div>
+    <div class="footer-service">
+      <p class="footer-service__title">CUSTOMER SERVICE</p>
+      <ul class="menu-service">
+        <li><a class="menu-service__item menu-service__item_contact" href="#">Contact us</a></li>
+        <li><a class="menu-service__item menu-service__item_help" href="#">Help/FAQ</a></li>
+        <li><a class="menu-service__item menu-service__item_shipping" href="#">Shipping</a></li>
+        <li><a class="menu-service__item menu-service__item_returns" href="#">Returns</a></li>
+        <li><a class="menu-service__item menu-service__item_size" href="#">Size guide</a></li>
+        <li><a class="menu-service__item menu-service__item_shopping" href="#">Holiday shopping</a></li>
       </ul>
-    </section>
-    <section class="footer-3">
-      <p class="footer__title">MISCELLANEOUS</p>
-      <ul class="footer__menu">
-        <li><a class="footer__item" href="#">About Us</a></li>
-        <li><a class="footer__item" href="#">Careers</a></li>
-        <li><a class="footer__item" href="#">Privacy Policy</a></li>
-        <li><a class="footer__item" href="#">Terms & Conditions</a></li>
-        <li><a class="footer__item" href="#">Ethical Policy</a></li>
-        <li><a class="footer__item" href="#">Homepage US/UK</a></li>
+    </div>
+    <div class="footer-miscel">
+      <p class="footer-miscel__title">MISCELLANEOUS</p>
+      <ul class="menu-miscel">
+        <li><a class="menu-miscel__item menu-miscel__item_about" href="#">About Us</a></li>
+        <li><a class="menu-miscel__item menu-miscel__item_careers" href="#">Careers</a></li>
+        <li><a class="menu-miscel__item menu-miscel__item_privacy" href="#">Privacy Policy</a></li>
+        <li><a class="menu-miscel__item menu-miscel__item_terms" href="#">Terms & Conditions</a></li>
+        <li><a class="menu-miscel__item menu-miscel__item_ethical" href="#">Ethical Policy</a></li>
+        <li><a class="menu-miscel__item menu-miscel__item_home" href="#">Homepage US/UK</a></li>
       </ul>
-    </section>
-    <section class="footer-4">
-      <p class="footer__title">NEWSLETTER SIGN UP</p>
-      <p class="footer__subtitle">Get 10% Off Your Next Order!</p>
-      <button class="footer__button">SIGN UP</button>
+    </div>
+    <div class="footer-sing">
+      <p class="footer-sing__title">NEWSLETTER SIGN UP</p>
+      <p class="footer-sing__subtitle">Get 10% Off Your Next Order!</p>
+      <button class="footer-sing__button">SIGN UP</button>
       <nav class="social-icons">
-        <a class="social__item" href="https://www.facebook.com"><img src="img/facebook.png"></a>
-        <a class="social__item" href="https://www.twitter.com"><img src="img/twitter.png"></a>
-        <a class="social__item" href="https://www.instagram.com/"><img src="img/instagram.png"></a>
-        <a class="social__item" href="https://www.pinterest.ru/"><img src="img/pinterest.png"></a>
+        <a class="social__item social__item_fb" href="https://www.facebook.com"><img src="img/facebook.png"></a>
+        <a class="social__item social__item_tw" href="https://www.twitter.com"><img src="img/twitter.png"></a>
+        <a class="social__item social__item_ig" href="https://www.instagram.com/"><img src="img/instagram.png"></a>
+        <a class="social__item social__item_pt" href="https://www.pinterest.ru/"><img src="img/pinterest.png"></a>
       </nav>
-    </section>
+    </div>
   </div>
   <p class="footer__niz">© 2019 Axion. All rights reserved.</p>
 </footer>
