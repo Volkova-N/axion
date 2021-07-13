@@ -70,7 +70,7 @@ body {
 .menu__item_search {
   padding-left: 96px;
   padding-right: 18px;
-  padding-top: 3px;
+  padding-top: 5px;
 }
 
 .menu__item_help {
@@ -183,7 +183,7 @@ body {
   }
 }
 
-/* .product__title {
+.product__title {
   text-align: center;
   font: 22px/21px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
   margin-bottom: 20px;
@@ -250,7 +250,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 8px;
+  padding-top: 7px;
 }
 
 .choice {
@@ -309,46 +309,74 @@ body {
 .tree {
   display: flex;
   justify-content: space-between;
-  background: #000;
-  margin-bottom: 82px;
+  align-items: center;
+  height: 494px;
+  background-color: #000;
 }
 
-.tree__video {
-  padding: 65px 18px 63px 32px;
-  width: 63%;
+.tree-box {
+  position: relative;
+  width: 664px;
+  height: 360px;
+  margin-top: 0;
+  margin-left: 33px;
+}
+
+.tree-box__video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tree-box__button {
+  position: relative;
+  z-index: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+  margin-top: 156px;
+  margin-left: 300px;
+}
+
+.tree-box__button:hover {
+  transform: scale(1.5);
+}
+
+.tree-box__button-img {
+  align-items: center;
 }
 
 .tree-text {
-  height: 40%;
-  width: 28%;
-  margin-top: 132px;
-  margin-right: 30px;
-  padding-left: 25px;
+  width: 35%;
+  height: 190px;
 }
 
 .tree-text__title {
   font: 22px/27px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
   color: #fff;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin: 0 30px 5px 40px;
+
 }
 
 .tree-text__subtitle {
   font: 14px/17px 'Gotham Pro Light', Arial, Helvetica, Sans-serif;
   color: #fff;
-  padding-right: 10px;
-  margin-bottom: 20px;
-  margin-top: 0;
+  margin: 15px 45px 20px 40px;
+
 }
 
 .tree-text__button {
   font: 12px/12px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
   color: #fff;
   text-decoration: none;
+  margin-left: 40px;
   margin-right: 10px;
+
 }
 
-.srories-wrapper {
+/*.srories-wrapper {
   display: flex;
   justify-content: space-between;
   margin-bottom: 69px;
@@ -521,7 +549,7 @@ footer {
   display: flex;
 }
 
-.social__item {
+.social-icons__item {
   padding: 0 24px 0 0;
 }
 
@@ -589,6 +617,10 @@ footer {
     padding-left: 55px;
   }
 
+  .tree-box__button {
+    margin-left: 290px;
+  }
+
 }
 
 @media (max-width: 1080px) {
@@ -598,6 +630,17 @@ footer {
 
   .menu__item_search {
     padding-left: 35px;
+  }
+
+  .tree-box__button {
+    margin-left: 285px;
+  }
+
+}
+
+@media (max-width: 1060px) {
+.tree-box__button {
+    margin-left: 280px;
   }
 
 }
@@ -700,7 +743,10 @@ footer {
     font: 12px/11.5px 'Gotham Pro Medium', Arial, Helvetica, Sans-serif;
   }
 
-/*
+  .product__title {
+    font: 22px/21px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
+  }
+
   .product-card__img-1,
   .product-card__img-2,
   .product-card__img-3,
@@ -765,31 +811,42 @@ footer {
   }
 
   .tree {
-    height: 445px;
+    height: 442px;
     margin-bottom: 89px;
   }
 
-  .tree__video {
-    padding: 60px 15px 60px 30px;
-    width: 62%;
+  .tree-box {
+    width: 580px;
+    height: 325px;
+  }
+
+  .tree-box__button {
+    margin-top: 140px;
+    margin-left: 267px;
+    width: 43px;
+    height: 43px;
   }
 
   .tree-text__title {
-    margin-top: 2px;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 11px;
   }
 
   .tree-text__subtitle {
     font: 13px/16px 'Gotham Pro Light', Arial, Helvetica, Sans-serif;
-    margin-bottom: 15px;
+    margin: 0 35px 15px 40px;
   }
 
   .tree-text__button {
     font: 12px/11.5px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
-    margin-right: 14px;
+    margin-right: 15px;
   }
 
-  .stories__title {
+  .arrow div {
+    width: 45px;
+  }
+
+  /*.stories__title {
     margin-bottom: 44px;
   }
 
@@ -874,6 +931,10 @@ footer {
     padding-left: 30px;
   }
 
+  .tree-box__button {
+    margin-left: 260px;
+  }
+
 }
 
 @media (max-width: 930px) {
@@ -883,6 +944,10 @@ footer {
 
   .menu__item_search {
     padding-left: 10px;
+  }
+
+  .tree-box__button {
+    margin-left: 250px;
   }
 
 }
@@ -904,6 +969,14 @@ footer {
     padding-left: 20px;
   }
 
+  .tree-box__button {
+    margin-left: 245px;
+  }
+
+  .tree-text__subtitle {
+    font: 12px/16px 'Gotham Pro Light', Arial, Helvetica, Sans-serif;
+  }
+
 }
 
 @media (max-width: 850px) {
@@ -915,6 +988,32 @@ footer {
     padding-left: 5px;
   }
 
+  .tree-box {
+    width: 510px;
+    height: 310px;
+  }
+
+  .tree-box__button {
+    margin-left: 225px;
+    width: 42px;
+    height: 42px;
+  }
+
+  .tree-text {
+    height: 250px;
+  }
+
+  .tree-text__button {
+    font: 11px/11.5px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
+  }
+
+  .tree-text__subtitle {
+    font: 11px/16px 'Gotham Pro Light', Arial, Helvetica, Sans-serif;
+  }
+
+  .tree-text__title {
+    font: 21px/27px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
+  }
 
 }
 
@@ -957,7 +1056,6 @@ footer {
     margin: 0;
     padding: 23px 0;
     list-style: none;
-    text-align: center;
     background-color: #fff;
   }
 
@@ -969,17 +1067,11 @@ footer {
     font: 30px/29px 'Gotham Pro Medium', Arial, Helvetica, Sans-serif;
   }
 
-  /*.menu__item_sing {
-    width: 190px;
-  }*/
-
   .menu__item_img,
   .menu__item_flag,
   .menu__item_search {
     display: none;
   }
-
-
 
   #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
@@ -1008,6 +1100,26 @@ footer {
     margin-top: 42px;
     margin-left: 8px;
   }
+
+  .menu__item {
+    font: 20px/29px 'Gotham Pro Medium', Arial, Helvetica, Sans-serif;
+  }
+
+  .menu__item {
+    padding: 10px 10px;
+  }
+
+  .tree-box__button {
+    margin-left: 210px;
+  }
+
+  .product-card__img-4,
+  .product-card__name_4,
+  .wrapper__choice_4,
+  .product-assortment__vl {
+    display: none;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -1066,11 +1178,15 @@ footer {
     top: 3px;
     right: -2px;
   }
-/*
+
   .product__title {
     font: 30px/29px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
     margin-bottom: 20px;
     padding-right: 15px;
+  }
+
+  .product-assortment {
+    margin-bottom: 33px;
   }
 
   .product-card__img-1,
@@ -1132,7 +1248,48 @@ footer {
     width: 20px;
     height: 20px;
   }
-*/
+
+  .tree {
+    background: url(img/black_baner.svg);
+    flex-direction: column-reverse;
+    height: 742px;
+  }
+
+  .tree-text {
+    width: 90%;
+    margin-top: 97px;
+    text-align: center;
+  }
+
+  .tree-text__title {
+    font: 30px/37px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
+    margin-bottom: 17px;
+    padding-right: 5px;
+  }
+
+  .tree-text__subtitle {
+    font: 20px/23px 'Gotham Pro Light', Arial, Helvetica, Sans-serif;
+    margin: 0 1px;
+  }
+
+  .button__tree {
+    display: none;
+  }
+
+  .tree-box {
+    width: 698px;
+    height: 610px;
+    margin-left: 3px;
+    margin-bottom: 90px;
+  }
+
+  .tree-box__button {
+    margin-top: 170px;
+    margin-left: 320px;
+    width: 51px;
+    height: 51px;
+  }
+
 }
 
 @media (max-width: 375px) {
@@ -1149,17 +1306,18 @@ footer {
   }
 
   .menu {
-    width: 60%;
-    height: 30%;
+    width: 100%;
+    height: 50%;
   }
 
   .menu__item {
-    font: 20px/11px 'Gotham Pro Medium', Arial, Helvetica, Sans-serif;
+    font: 17px/11px 'Gotham Pro Medium', Arial, Helvetica, Sans-serif;
+    padding: 12px 10px;
   }
 
   .menu__btn {
-    top: 33px;
-    right: 315px;
+    top: 34px;
+    right: 47px;
     width: 41px;
     height: 16px;
   }
@@ -1178,6 +1336,7 @@ footer {
     background: url(img/baner3.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 35px;
   }
 
   .one__title {
@@ -1211,6 +1370,92 @@ footer {
     right: -2px;
   }
 
+  .product__title {
+    font: 20px/19px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
+    margin-bottom: 3px;
+    padding-right: 10px;
+  }
+
+  .product-assortment {
+    margin-bottom: 60px;
+  }
+
+  .product-card__img-1 {
+    height: 165px;
+    width: 162px;
+    margin-left: 110px;
+    margin-bottom: 14px;
+    margin-top: 3px;
+  }
+
+  .product-card__img-2,
+  .product-card__name_2,
+  .wrapper__choice_2 {
+    display: none;
+  }
+
+  .product-card__name {
+    font: 15px/14px 'Gotham Pro Medium', Arial, Helvetica, Sans-serif;
+  }
+
+  .product-card__name_1 {
+    padding-left: 63px;
+    margin-bottom: 4px;
+  }
+
+  .wrapper__choice_1 {
+    padding-top: 0;
+    padding-left: 50px;
+  }
+
+  .product-card__price {
+    font: 20px/19px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
+    padding-right: 118px;
+    padding-left: 12px;
+  }
+
+  .choice {
+    width: 80px;
+    padding-top: 4px;
+  }
+
+  .choice__item {
+    width: 15px;
+    height: 15px;
+  }
+
+  .tree {
+    height: 442px;
+  }
+
+  .tree-text {
+    width: 80%;
+    margin-top: 54px;
+  }
+
+  .tree-text__title {
+    font: 20px/25px 'Gotham Pro Bold', Arial, Helvetica, Sans-serif;
+    margin: 0 20px 18px 23px;
+  }
+
+  .tree-text__subtitle {
+    font: 14px/17px 'Gotham Pro Light', Arial, Helvetica, Sans-serif;
+    margin: 0 10px;
+  }
+
+  .tree-box {
+    width: 283px;
+    height: 220px;
+    margin-bottom: 45px;
+  }
+
+  .tree-box__button {
+    margin-top: 66px;
+    margin-left: 129px;
+    width: 25px;
+    height: 25px;
+  }
+
 }
 
 @media (max-width: 320px) {
@@ -1242,6 +1487,32 @@ footer {
 
   .one__button {
     margin-left: 20px;
+  }
+
+  .product-card__img-1 {
+    margin-left: 81px;
+    margin-bottom: 13px;
+  }
+
+  .product-card__name_1 {
+    padding-left: 33px;
+  }
+
+  .wrapper__choice_1 {
+    padding-left: 23px;
+  }
+
+  .tree-text {
+    width: 90%;
+  }
+
+  .tree-text__title {
+    margin-left: 19px;
+  }
+
+  .tree-text__subtitle {
+    padding: 0 5px;
+    margin: 0;
   }
 
 }
